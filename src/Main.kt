@@ -1,4 +1,3 @@
-import java.lang.Math.pow
 import kotlin.math.ln
 import kotlin.math.log10
 import kotlin.math.pow
@@ -20,7 +19,7 @@ fun task1(precision: Double){
     var k = 0
 
     do {
-        addition = x.pow(((2 * k + 1).toDouble())) /(2 * k + 1)
+        addition = x.pow((2 * k + 1).toDouble()) / (2 * k + 1)
         fr += addition
 
         k++
@@ -28,7 +27,7 @@ fun task1(precision: Double){
 
     fr *= 2.0
 
-    println("Кількість додатнів: $k")
+    println("Кількість доданків: $k")
     println("Різниця лівої частини до правої: " + (fl - fr))
 }
 
